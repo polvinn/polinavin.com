@@ -2186,7 +2186,7 @@ h6 {
 }
 
 p {
-  color: var(--neutral--700);
+  color: var(--neutral--500);
   margin-bottom: 0;
   font-family: Inter, sans-serif;
   font-size: 16px;
@@ -6272,7 +6272,7 @@ figcaption {
 }
 
 .heading-22 {
-  color: var(--neutral--800);
+  color: var(--neutral--500);
 }
 
 .doodle-copy-block-footer {
