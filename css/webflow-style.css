@@ -7290,10 +7290,6 @@ figcaption {
     align-items: stretch;
   }
 
-  .intro {
-    height: 1380px;
-  }
-
   .left-content-intro.move-up-430 {
     top: -430px;
   }
@@ -8400,10 +8396,6 @@ figcaption {
   .heading-2 {
     font-size: 56px;
     line-height: 64px;
-  }
-
-  .intro {
-    height: 100vw;
   }
 
   .top-content {
