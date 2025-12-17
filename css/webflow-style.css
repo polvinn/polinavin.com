@@ -4561,7 +4561,7 @@ figcaption {
   background-color: #0000;
   flex-direction: column;
   grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
   justify-content: flex-start;
@@ -4574,6 +4574,15 @@ figcaption {
   display: grid;
   position: relative;
 }
+  .intro-right {
+    grid-column:2;
+    grid-row:1;
+  }
+  .intro-left {
+    grid-column:1;
+    grid-row:2;
+  }
+
 
 .left-content-intro {
   grid-column-gap: 0px;
@@ -6777,6 +6786,10 @@ figcaption {
   animation: 1.2s linear infinite spin;
 }
 
+  .hero-right {
+    justify-content: flex-end;
+  }
+
 @media screen and (min-width: 1280px) {
   h4 {
     font-size: 24px;
@@ -8897,6 +8910,18 @@ figcaption {
     padding: 20px 30px;
   }
 
+  .hero-right {
+    justify-content: flex-start;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .intro-right {
+    grid-column:1;
+    grid-row:1;
+  }
+ 
   .work-experience-grid {
     flex-direction: column;
     align-items: center;
@@ -9681,7 +9706,7 @@ figcaption {
   .intro-wrap {
     margin-top: 0;
   }
-
+ 
   .contact {
     padding-left: 15px;
     padding-right: 15px;
@@ -10346,10 +10371,9 @@ figcaption {
   }
 
   .sub-text-hero {
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     line-height: 24px;
-    display: none;
   }
 
   .doodle-copy-block-menu {
