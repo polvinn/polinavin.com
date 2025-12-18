@@ -2055,14 +2055,28 @@ textarea.w-input, textarea.w-select {
 }
 
 :root {
-  --neutral--800: #1f2937;
+  /* --neutral--100: #f3f4f6;
+  --neutral--200: #e5e7eb;
+  --neutral--300: #d1d5db;
   --neutral--400: #9ca3af;
-  --neutral--900: #111827;
-  --neutral--700: #374151;
   --neutral--500: #6b7280;
+  --neutral--600: #4b5563;
+  --neutral--700: #374151;
+  --neutral--800: #1f2937;
+  --neutral--900: #111827; */
+
+  --neutral--900: #f3f4f6;
+  --neutral--800: #e5e7eb;
+  --neutral--700: #d1d5db;
+  --neutral--600: #9ca3af;
+  --neutral--500: #6b7280;
+  --neutral--400: #4b5563;
+  --neutral--300: #374151;
+  --neutral--200: #1f2937;
+  --neutral--100: #111827;
+  
   --white: white;
   --neutral--50: #f9fafb;
-  --neutral--200: #e5e7eb;
   --hover-card-bgr: #36373d;
   --dark-card-background: #1e1f22;
   --yellow: #d4cf43;
@@ -2072,11 +2086,8 @@ textarea.w-input, textarea.w-select {
   --page-backg: #2c2c2c;
   --navlink-bg: #3d3d3d99;
   --shadow: #f5f5f5;
-  --neutral--100: #f3f4f6;
   --black: black;
-  --neutral--300: #d1d5db;
-  --neutral--600: #4b5563;
-  --grey-bkg: var(--dark-card-background);
+    --grey-bkg: var(--dark-card-background);
 }
 
 .w-layout-grid {
