@@ -5141,6 +5141,15 @@ figcaption {
   font-weight: 300;
   line-height: 44px;
 }
+.socicon {
+  display:flex;
+  align-items:center;
+  justify-content:left;
+  gap:10%;
+  margin-top:22px;
+  width:100%;
+}
+
 
 .socicon-menu {
   grid-column-gap: 0px;
@@ -8913,6 +8922,9 @@ figcaption {
   .hero-right {
     justify-content: flex-start;
   }
+  .socicon {
+    justify-content:center;
+  }
 
   .intro {
     grid-template-columns: 1fr;
@@ -9997,7 +10009,6 @@ figcaption {
   }
 
   .sub-text-intro {
-    text-align: center;
     font-size: 16px;
     line-height: 22px;
   }
