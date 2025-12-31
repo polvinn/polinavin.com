@@ -6690,10 +6690,6 @@ figcaption {
   position: relative;
 }
 
-.embed-video-mobile {
-  display: none;
-}
-
 .div-block-39 {
   grid-column-gap: 32px;
   grid-row-gap: 32px;
@@ -7554,10 +7550,6 @@ figcaption {
     margin-bottom: 28px;
   }
 
-  .hero-about {
-    padding-bottom: 64px;
-  }
-
   .rich-text-block-29 {
     width: auto;
   }
@@ -7940,6 +7932,9 @@ figcaption {
     width: 100%;
   }
 
+  .video-about-yt {
+    width: 80%;
+  }
   .about-intro-grid {
     grid-row-gap: 50px;
     text-align: center;
@@ -9604,14 +9599,6 @@ figcaption {
 
   .video-about-gd {
     width: 68%;
-  }
-
-  .embed-video-mobile {
-    display: block;
-  }
-
-  .embed-video {
-    display: none;
   }
 
   .div-block-39 {
