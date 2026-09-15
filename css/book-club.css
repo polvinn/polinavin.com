@@ -1,0 +1,64 @@
+/* Book Club only: existing typography, neutral tokens, image and button classes. */
+.club-page p, .club-page li { color: var(--neutral--600); font-family: Inter, sans-serif; font-size: 16px; line-height: 27px; }
+.club-page p + p { margin-top: 16px; }
+.club-page .club-statement { color: var(--neutral--800); font-size: 28px; font-weight: 600; line-height: 38px; margin-bottom: 24px; }
+.club-section { margin-top: 72px; }
+.club-page .secondary-title { color: var(--neutral--800); }
+.club-facts, .club-practical { list-style: none; padding: 0; margin: 24px 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px 32px; }
+.club-page .club-facts { grid-template-columns: 1fr; gap: 16px; }
+.club-page .club-practical { grid-template-columns: 1fr; gap: 16px; }
+.club-page .club-facts li, .club-page .club-practical li { font-size: 20px; line-height: 30px; font-weight: 700; color: var(--neutral--500); }
+
+.club-join { display: inline-block; max-width: 100%; margin-top: 8px; }
+.club-join .cta-tm { border: 1px solid var(--neutral--600); background: var(--neutral--800); }
+.club-join .label-tm { color: var(--white); text-decoration: none; }
+.club-join:hover .cta-tm { background: var(--neutral--600); }
+.club-join:focus-visible, .club-contact a:focus-visible { outline: 2px solid var(--neutral--800); outline-offset: 4px; }
+.club-questions { margin: 24px 0; }
+.club-page .club-questions li { margin-bottom: 12px; font-size: 18px; font-weight: 700; line-height: 28px; list-style: disc outside; }
+.club-audience, .club-signup { border-top: 1px solid var(--neutral--300); padding-top: 32px; }
+.club-audience, .club-section[aria-labelledby="month-title"] { border-bottom: 1px solid var(--neutral--300); padding-bottom: 32px; }
+.club-audience > p:last-child, .club-section[aria-labelledby="month-title"] > p:last-child { margin-bottom: 0; }
+
+.club-season > .section-title { margin-bottom: 16px; }
+.club-page .club-subtitle { font-size: 22px; line-height: 32px; margin-bottom: 16px; }
+.club-progression { display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 0; margin: 32px 0; list-style: none; }
+.club-progression li, .club-book-theme { font-weight: 600; }
+.club-page .club-book-theme { font-size: 20px; line-height: 30px; color: var(--neutral--500); }
+.club-book { display: grid; grid-template-columns: 144px minmax(0,1fr); gap: 32px; padding: 32px 0; border-top: 1px solid var(--neutral--300); align-items: start; }
+.club-season > p + .club-book { margin-top: 32px; }
+.club-book img { display: block; width: 144px; max-height: 225px; object-fit: contain; object-position: top left; }
+.club-page h3 { color: var(--neutral--800); font-family: Inter, sans-serif; font-size: 22px; line-height: 30px; font-weight: 600; margin: 8px 0 12px; }
+.club-page .club-book h3 { margin-bottom: 4px; }
+.club-page .club-author { font-size: 15px; margin-top: 0; }
+.club-page .club-question { margin-top: 20px; color: var(--neutral--500); }
+.club-timeline { padding-left: 24px; margin: 0 0 24px; }
+.club-timeline li { padding-left: 12px; margin-bottom: 28px; }
+.club-timeline li::marker { color: var(--neutral--600); font-weight: 600; }
+.club-timeline h3 { font-size: 20px; line-height: 28px; }
+.club-page .club-about { padding: 0; }
+.club-about .hero-layout { width: 100%; display: flex; gap: 40px; align-items: center; flex-wrap: wrap-reverse; }
+.club-about .hero-left { flex: 1 1 294px; min-width: 0; }
+.club-about .hero-right { flex: 0 1 320px; min-width: 0; }
+.club-about .img-container { max-width: 320px; }
+.club-about .image-70 { height: auto; }
+.club-contact { margin-top: 48px; }
+.club-contact a { display: inline; color: var(--neutral--800); text-underline-offset: 4px; }
+@media (max-width: 767px) {
+ .club-page .club-facts li { font-size: 20px; line-height: 30px; }
+ .club-facts, .club-practical { grid-template-columns: 1fr; }
+ .club-section { margin-top: 48px; }
+ .club-page .club-statement { font-size: 24px; line-height: 34px; }
+
+ .club-book { grid-template-columns: 112px minmax(0,1fr); gap: 24px; }
+ .club-book img { width: 112px; }
+}
+@media (max-width: 479px) {
+ .club-book { grid-template-columns: 1fr; }
+ .club-book img { width: 120px; }
+ .club-about .hero-right { flex-basis: 100%; }
+ .club-join { width: 100%; }
+}
+
+.club-hero > .club-join,
+.club-signup > .club-join { display: table; width: fit-content; margin-left: auto; margin-top: 64px; }

@@ -1,0 +1,44 @@
+/* Small additions to the existing Webflow system; only loaded by the updated pages. */
+.hero .socicon { display: flex; justify-content: flex-start; gap: 32px; }
+.section-inner { max-width: 1440px; margin: 0 auto; }
+.home-section { padding-top: 40px; padding-bottom: 40px; }
+.section-title { white-space: normal; text-align: left; font-size: 40px; line-height: 48px; margin-bottom: 32px; }
+.secondary-title { white-space: normal; font-size: 24px; font-weight: 700; line-height: 32px; margin: 0 0 24px; }
+.focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.focus-card { border: 1px solid var(--neutral--300); border-radius: 7px; padding: 24px; text-align: left; justify-content: flex-start; align-items: stretch; cursor: pointer; transition: border-color .2s, background-color .2s; }
+.focus-card .div-block-26 { width: 100%; padding-bottom: 0; }
+.focus-card .heading-22 { color: var(--neutral--800); font-family: Inter, sans-serif; font-size: 24px; font-weight: 700; line-height: 32px; margin: 0 0 16px; }
+.focus-card .paragraph-11 { color: var(--neutral--600); font-size: 16px; line-height: 26px; }
+.focus-card .paragraph-11 + .paragraph-11 { margin-top: 12px; }
+.focus-card:hover { border-color: var(--neutral--600); background-color: var(--neutral--100); }
+.focus-card:focus-visible, .back-home:focus-visible { outline: 2px solid var(--neutral--800); outline-offset: 4px; }
+.narrative { max-width: 960px; margin-left: auto; margin-right: auto; }
+.journey-list { margin: 0; padding-left: 20px; list-style: disc outside; }
+.journey-list li { list-style: disc; margin: 0 0 20px; color: var(--neutral--600); line-height: 1.6; }
+.journey-list li:last-child { margin-bottom: 0; }
+.learning-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
+.learning-grid .focus-card { border-radius: 0; border-width: 1px 0 0; padding: 24px; }
+.learning-grid .heading-22 { font-size: 20px; line-height: 28px; }
+.resource-page { min-height: 55vh; padding-top: 60px; padding-bottom: 60px; }
+.resource-intro { margin-bottom: 40px; color: var(--neutral--600); line-height: 1.6; }
+.back-home { display: inline-block; color: var(--neutral--600); font-family: Inter, sans-serif; margin-bottom: 32px; }
+.back-home:hover { color: var(--neutral--800); }
+.article-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.article-list .focus-card { min-width: 0; overflow-wrap: anywhere; }
+.article-list .article-byline { margin-top: 16px; font-size: 14px; }
+.program-details { color: var(--neutral--600); font-family: Inter, sans-serif; line-height: 1.6; margin-top: 24px; }
+.program-details dt { font-weight: 600; margin-top: 20px; }
+.program-details dd { margin-left: 0; }
+@media (max-width: 991px) { .focus-grid { grid-template-columns: 1fr; } }
+@media (max-width: 767px) {
+ .article-list { grid-template-columns: 1fr; }
+ .learning-grid { grid-template-columns: 1fr; gap: 16px; }
+ .section-title { font-size: 32px; line-height: 40px; }
+ .hero .hero-left, .hero .hero-right { min-width: 0 !important; }
+}
+@media (max-width: 479px) {
+ .home-section { padding-top: 24px; padding-bottom: 24px; }
+ .focus-card { padding: 20px; }
+ .focus-card .heading-22 { font-size: 22px; line-height: 30px; }
+}
+@media (prefers-reduced-motion: reduce) { .focus-card { transition: none; } }
