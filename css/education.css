@@ -1,0 +1,33 @@
+/* Education-only additions to the existing page and component styles. */
+.education-page .education-hero { padding: 0; }
+.education-hero .education-intro { margin-top: 14px; }
+.education-hero .image-70 { aspect-ratio: 524 / 419; height: auto; object-fit: cover; }
+.education-page p, .education-page li, .workshop-details {
+  color: var(--neutral--600);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+.education-page p + p { margin-top: 16px; }
+.education-page .secondary-title { font-size: 24px; line-height: 32px; }
+.education-audiences, .education-section { margin-top: 60px; }
+.education-audiences section { border-top: 1px solid var(--neutral--300); padding-top: 24px; }
+.education-audiences .journey-list { margin: 16px 0 24px; }
+.education-audiences .journey-list li { margin-bottom: 8px; }
+.sample-workshop { border: 1px solid var(--neutral--300); border-radius: 7px; background: var(--neutral--100); padding: 32px; }
+.sample-workshop h3 { color: var(--neutral--800); font-family: Inter, sans-serif; font-size: 24px; line-height: 32px; font-weight: 700; margin: 0 0 16px; }
+.workshop-details { margin: 24px 0; }
+.workshop-details div + div { margin-top: 8px; }
+.workshop-details dt, .workshop-details dd { display: inline; margin: 0; }
+.workshop-details dt { font-weight: 600; }
+.education-link { display: inline; color: var(--neutral--800); font-family: Inter, sans-serif; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.sample-workshop > .education-link { display: inline-block; margin-top: 24px; }
+.education-link:hover { color: var(--neutral--600); }
+.education-link:focus-visible { outline: 2px solid var(--neutral--800); outline-offset: 4px; }
+.education-contact { border-top: 1px solid var(--neutral--300); padding-top: 32px; }
+@media (max-width: 767px) {
+ .education-audiences, .education-section { margin-top: 40px; }
+ .education-audiences { gap: 32px; }
+ .sample-workshop { padding: 24px; }
+}
+@media (max-width: 479px) { .sample-workshop { padding: 20px; } }
