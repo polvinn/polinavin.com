@@ -62,3 +62,20 @@
 
 .club-hero > .club-join,
 .club-signup > .club-join { display: table; width: fit-content; margin-left: auto; margin-top: 64px; }
+
+/* Native disclosure controls retain keyboard and screen reader support. */
+.club-faq-item { border-top: 1px solid var(--neutral--300); }
+.club-faq-item:last-child { border-bottom: 1px solid var(--neutral--300); }
+.club-faq-item summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 24px 0; color: var(--neutral--800); font-family: Inter, sans-serif; font-size: 24px; font-weight: 600; line-height: 32px; cursor: pointer; list-style: none; }
+.club-faq-item summary::-webkit-details-marker { display: none; }
+.club-faq-item summary:hover { color: var(--neutral--500); }
+.club-faq-item summary:focus-visible { outline: 2px solid var(--neutral--800); outline-offset: 4px; }
+.club-faq-indicator { flex: 0 0 20px; width: 20px; height: 20px; position: relative; }
+.club-faq-indicator::before, .club-faq-indicator::after { content: ''; position: absolute; background: currentColor; }
+.club-faq-indicator::before { width: 20px; height: 2px; top: 9px; left: 0; }
+.club-faq-indicator::after { width: 2px; height: 20px; top: 0; left: 9px; }
+.club-faq-item[open] .club-faq-indicator::after { display: none; }
+.club-faq-answer { padding-bottom: 32px; cursor: pointer; }
+.club-faq-answer > :last-child { margin-bottom: 0; }
+@media (max-width: 767px) { .club-faq-item summary { font-size: 20px; line-height: 28px; gap: 16px; } }
+.club-page .club-faq-answer[aria-labelledby="month-title"] h3 { font-size: 20px; line-height: 28px; color: var(--neutral--500); }
